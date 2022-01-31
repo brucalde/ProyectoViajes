@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include ("../partials/head") %>
+    <title>Alojamientos</title>
+</head>
+<body>
+    <%-include ("../partials/nav") %>
+
+    <div class="aparrafo">
+        <p>
+            Para disfrutar de un dia, hay que arrancar o terminarlo con buen descanso y confort. Estos son los hospedajes recomendados y verificados por nosotros.<br> En esta seccion podra verlos, y cuando nos contacte definir el suyo.
+        </p>
+    </div>
+    <main class="acontenedor">
+
+        <% data.forEach((prod)=>{ %>
+            <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="<%= prod.imagen %>" class="img-fluid rounded-start" alt="hotelhyatt">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= prod.nombre %> </h5>
+                        <p class="card-text"> <%= prod.descripcion %> </p>
+                        <p class="card-text"><small class="text-muted"><%= prod.distancia %> </small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+
+
+
+
+    <%-include ("../partials/footer") %>
+
+
+
+    
+</body>
+</html>

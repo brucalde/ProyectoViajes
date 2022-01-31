@@ -1,0 +1,294 @@
+body{
+    position: relative;
+    margin: 0px;
+}
+
+/*---------- Navegador -----------*/
+
+
+.nave {
+    height: 96px; 
+    justify-content: space-around;
+    display: flex;
+    background-color: rgba(206, 197, 197, 0.877);
+    box-shadow: 10px 11px 30px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 11px 30px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 11px 30px -5px rgba(0,0,0,0.75);
+    width: 97%;
+    margin: auto;
+    border-radius: 2%;
+    margin-top: 8px;
+}
+
+.principal {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.logoprincipal{
+    height: 90px;
+    width: 95px;
+    border-radius: 15%;
+    margin-top: 3px;
+}
+.logoprincipal:hover{
+    box-shadow: 10px 11px 30px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 11px 30px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 11px 30px -5px rgba(0,0,0,0.75);
+}
+
+.links {
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+    
+}
+
+
+.listasa{
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+.listasa:hover{
+    color: white;
+}
+
+.bar-btn{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.segundotitulo{
+    margin-top: 100px;
+    margin-left: 40%;
+    font-family: 'Petemoss', cursive ;
+    font-size: 70px;
+}
+
+/*banner*/
+
+#carouselExampleFade {
+    height: 450px;
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.carousel-inner{
+    height: 450px;
+}
+
+article{
+    width: 400px;
+    height: 500px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 60px;
+}
+article:hover {
+    box-shadow: 10px 20px 28px 3px rgba(161,151,151,0.41);
+}
+article div {
+    text-align: center;
+    margin-top: 50px;
+}
+.tituloanuncio {
+    font-size: 30px;
+}
+
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: (6,1fr);
+    background-color: rgba(206, 197, 197, 0.877);
+    margin-top: 35px;
+}
+
+.foter{
+    grid-column: 2/3;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.redes{
+    grid-column: 4/5 ;
+}
+
+.logofin{
+    grid-column: 5/6 ;
+    height: 90px;
+    width: 95px;
+    border-radius: 15%;
+    margin-top: 10px;
+}
+    
+
+
+/*-------------------   Hoja contactos      ---------------------*/
+
+
+.ctitulo {
+    margin-top: 150px ;
+    margin-left: 40%;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.cparrafo{
+    margin-top: 70px;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contenform{
+    width: 75%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.form-label{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.boton-agregar{
+    margin-top: 15px;
+    margin-left: 45%;
+    border-radius: 15%;
+    padding: 5px;
+}
+
+/*--------------      Hoja paquetes          ----------------*/
+
+.card-img{
+    width: 100%;
+    height: 300px;
+}
+
+.contenedorpaquetes{
+    width: 85%;
+    height: 300px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.card-img-top{
+    box-sizing: border-box;
+    height: 170px;
+}
+.princonte{
+    
+    display: inline-flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+
+}
+
+.contenedorcards{
+    padding: 80px;
+}
+
+
+/*----------------    Hoja alojamientos      ----------------*/
+
+
+.aparrafo{
+    font-family: 'Quicksand', sans-serif;
+    width: 65%;
+    margin: auto;
+    margin-top: 150px;
+
+}
+
+.acontenedor{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.asegcontenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.hamburgesa{
+    display: none;
+}
+
+
+/*----------------- responsive celulares ----------------------->*/
+
+
+/*-------- Index  ----------*/
+
+@media (max-width: 500px){
+    body{
+        font-size: 12px
+        }
+    .logoprincipal{
+        height: 70px;
+        width: 75px;
+        margin-left: 20px;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .bar-btn{
+        display: block;
+        font-size: 30px;
+        margin-top: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    #check:checked + .listas{
+        display: block;
+    }
+
+    .redes p {
+        font-size: 14px
+    }
+
+    .logofin{
+        height: 70px;
+        width: 75px;
+        margin-left: 20px;
+
+    }
+
+    .segundotitulo{
+        font-family: 'Petemoss', cursive ;
+        margin-left: 25%;
+    }
+
+
+    /*------- Hoja paquetes ---------*/
+
+    .contenedorcards{
+        display: block;
+        margin-left: 15px;
+    }
+
+
+    /*------- Alojamientos  ----------*/
+
+    .acontenedor{
+    padding: 30px;
+}
+
+
+
+    
+
+};

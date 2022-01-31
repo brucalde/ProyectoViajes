@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include ("../partials/head") %>
+
+    <title>Hojacontactos</title>
+</head>
+<body>
+    <%-include ("../partials/nav") %>
+    <div class="ctitulo">
+        <h1>BIENVENIDXS !</h1>
+    </div>
+    
+
+    <div class="cparrafo">
+        <p>Somos una empresa dedicada al cliente, facilitandole una buena experiencia. Contamos con varios asesores para brindarle una atencion personalizada. <br>Le pedimos que complete los datos con sus preferencias y se comunicara un asesor con usted.</p>
+    </div>
+    
+
+    <main class="contenform">
+        <form method="POST" action="/tienda/nuevoProducto">
+            <div class="item-form">
+                <label for="nombres" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombres" name="nombres">
+            </div>
+            <div class="item-form">
+                <label for="documento" class="form-label">Su documento</label>
+                <input type="number" class="form-control" id="documento" name="documento">
+            </div>
+            <div class="item-form">
+                <label for="fecha" class="form-label">Fecha de Salida</label>
+                <input type="date" class="form-control" id="fecha" name="fecha">
+            </div>
+            <div class="item-form">
+                <label for="integrantes" class="form-label">Indique el numero de integrantes</label>
+                <input type="number" class="form-control" id="integrantes" name="integrantes">
+            </div>
+            <button type="submit" class="boton-agregar" id="botonen">Enviar</button>
+        </form>
+    </main>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <%-include ("../partials/footer") %>
+</body>
+</html>

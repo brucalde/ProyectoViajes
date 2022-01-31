@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <%-include ("../partials/head") %>
+
+    
+    <title>Viajes</title>
+</head>
+<body>
+  <header>
+        <%-include ("../partials/nav")  %>
+
+  </header>
+
+
+    <div>
+        <h2 class="segundotitulo"> ¡ Bienvenidos !</h2>    
+    </div>
+        
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./imagenes/12.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/47105.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/Park-Hyatt-Mendoza-P041-Facade-Lateral-View.16x9.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <article>
+        <div>
+            <p class="tituloanuncio"> <br>Documentación necesaria para comprar y viajar<br> </p>
+            <p>Para comprar tu viaje en Viajar S. tené a mano el número de documento de identidad, el nombre, el apellido y la fecha de
+            nacimiento de cada uno de los pasajeros. Antes de viajar, revisá el detalle de tu reserva en Mi Cuenta para conocer las
+            visas y vacunas exigidas en el país de destino. Esto incluye las escalas, conexiones, tours y paradas que hagas durante
+            tu viaje. Si un menor viaja solo o acompañado, deberá contar con una autorización obligatoria para salir del país.  </p>
+        </div>
+    </article>
+
+
+    <%-include ("../partials/footer") %>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+</html>
